@@ -1,10 +1,11 @@
-Calculo de PLR 
+# Calculo de PLR 
 
-#Insira o salario
+# Digite o salário: 
+# Digite o mês de início (1-12): 
+# Digite o dia de início (1-31): 
 
-#Insira o mês
+# Resultado
 
-#Insira o dia
-
-Resultado
-
+# Total de dias trabalhados: 
+# Proporção de dias trabalhados: 
+# PLR proporcional: 
