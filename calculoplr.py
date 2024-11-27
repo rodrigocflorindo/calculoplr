@@ -1,20 +1,24 @@
 from datetime import date
 
-# Solicitar o salário e a data de início ao usuário
+# Solicitar o salário ao usuário
 salario = float(input("Digite o salário: "))
-percentual_plr = 0.97  # Percentual fixo da PLR
 
-# Solicitar a data de início
-ano = 2024
+# Solicitar o percentual da PLR ao usuário
+percentual_plr = float(input("Digite o percentual da PLR (em %): ")) / 100  # Converter para decimal
+
+# Solicitar o ano e a data de início
+ano = int(input("Digite o ano de início: "))
 mes = int(input("Digite o mês de início (1-12): "))
 dia = int(input("Digite o dia de início (1-31): "))
 data_inicio = date(ano, mes, dia)
 
 # Data de final do ano
-data_fim = date(2024, 12, 31)
+data_fim = date(ano, 12, 31)
 
-# Total de dias no ano e dias trabalhados
-total_dias_ano = 366  # 2024 é um ano bissexto
+# Verificar se o ano é bissexto
+total_dias_ano = 366 if (ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0)) else 365
+
+# Total de dias trabalhados
 dias_trabalhados = (data_fim - data_inicio).days + 1  # +1 para incluir o dia de início
 
 # Proporção de dias trabalhados
