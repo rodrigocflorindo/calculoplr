@@ -1,5 +1,4 @@
 # Calculo de PLR 
-(Baseado em 97% dos resultados) Pode ser editado para a % conforme a sua empresa)
 
 
 Digite o salário:
